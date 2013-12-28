@@ -1,0 +1,1 @@
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on -users dtsvcs -privs -all -restart -agent -menu

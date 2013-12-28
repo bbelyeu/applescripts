@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {openWebSite = id; }; 
+            CLASS = photoDropEngine; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                currentFile = id; 
+                descriptionText = id; 
+                progressBar = id; 
+                progressWindow = id; 
+                timeRemaining = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>applet</string>
+	<key>CFBundleIconFile</key>
+	<string>applet</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.AppleScript.UNIXPrefsExample</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Prefs Example</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>aplt</string>
+	<key>LSRequiresCarbon</key>
+	<true/>
+	<key>WindowState</key>
+	<dict>
+		<key>name</key>
+		<string>ScriptWindowState</string>
+		<key>positionOfDivider</key>
+		<real>792</real>
+		<key>savedFrame</key>
+		<string>260 121 1029 1045 0 0 1920 1178 </string>
+		<key>selectedTabView</key>
+		<string>event log</string>
+	</dict>
+</dict>
+</plist>

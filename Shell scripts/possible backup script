@@ -1,0 +1,64 @@
+#!/bin/sh
+  
+# To use Apple's rsync switch commented lines below
+# To use rsyncx:
+# RSYNC=/usr/local/bin/rsync --eahfs --showtogo
+# To use built-in rsync (OS X 10.4 and later):
+RSYNC="/usr/bin/rsync -E -v"
+  
+DEST=/Volumes/Backups
+  
+# Function for toggling Spotlight indexing
+spotlight_switch()
+{
+/usr/bin/mdutil -i $1 /
+# /usr/bin/mdutil -i $1 /Volumes/Backups
+}
+  
+# sudo runs the backup as root
+# --eahfs enables HFS+ mode
+# -a turns on archive mode (recursive copy + retain attributes)
+# -x don't cross device boundaries (ignore mounted volumes)
+# -S handle sparse files efficiently
+# --showtogo shows the number of files left to process
+# --delete deletes any files that have been deleted locally
+# $* expands to any extra command line options you may give
+  
+# make sure we're running as root
+# id options are effective (u)ser ID
+if (( `id -u` != 0 )); then
+{ echo "Sorry, must be root. Exiting..."; exit; }
+fi;
+  
+! test -d $DEST && echo "Please mount the backup drive!" && exit
+spotlight_switch off
+  
+rm -rf $DEST/backup.2
+mv $DEST/backup.1 $DEST/backup.2
+mv $DEST/backup $DEST/backup.1
+  
+$RSYNC -a -x -S --delete --link-dest=../backup.1 \
+    --exclude-from backup_excludes.txt $* / /Volumes/Backups/backup
+  
+# make the backup bootable - comment this out if needed
+  
+bless -folder $DEST/backup/System/Library/CoreServices
+  
+spotli ght_switch on
+
+
+My excludes file:
+
+/tmp/*
+/Network/*
+/cores/*
+*/.Trash
+/afs/*
+/a utomount/*
+/private/tmp/*
+/private/var/run/*
+/p rivate/var/spool/postfix/*
+/private/var/vm/*
+/Pr evious Systems.localized
+.Spotlight-*/
+/Users/*/Library /Caches

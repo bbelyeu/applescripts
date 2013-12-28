@@ -1,0 +1,56 @@
+/* Mac OS X 10.3 or higher needed - Dialog Title */
+"MAC_OS_X_10_3_REQUIRED_TITLE" = "Mac OS X 10.3 Required";
+
+/* Mac OS X 10.3 or higher needed - Dialog Text */
+"MAC_OS_X_10_3_REQUIRED_TEXT" = "For photo droplets to operate, Mac OS X 10.3 or higher must be installed.";
+
+/* General Droplet information panel - Dialog Title */
+"DROPLET_INFO_TITLE" = "About this Droplet";
+
+/* General Droplet information panel - Dialog Text */
+"DROPLET_INFO_TEXT" = "This application is a drag and drop droplet.  Drop images or folders of images onto the droplet's icon for them to be acted upon.";
+
+/* General Droplet information panel - More Information Button */
+"DROPLET_INFO_MORE_INFO_BTN" = "More Information";
+
+/* Modification Warning information panel - Dialog Title */
+"MODIFICATION_WARNING_TITLE" = "Are you sure you want to modify the original image?";
+
+/* Modification Warning information panel - Dialog Text */
+"MODIFICATION_WARNING_TEXT" = "Modifying the image will result in a non-undoable change.  Pressing the Option key on launch will skip this dialog.";
+
+/* Quit - Quit Button */
+"QUIT" = "Quit";
+
+/* Continue - Continue Button */
+"CONTINUE" = "Continue";
+
+/* Processing %i items - Number of files to process */
+"PROCESSING_X_TIMES" = "Processing %i items";
+
+/* Item: %@ - File currently being processed */
+"ITEM_X" = "Item: \"%@\"";
+
+/* Time Remaining: Calculating... - Calculating the time remaining */
+"TIME_REMAINING_CALCULATING" = "Time Remaining: Calculating...";
+
+/* Time Remaining: About %i minutes - About %i minutes */
+"TIME_REMAINING_X_MINUTES" = "Time Remaining: About %i minutes";
+
+/* Time Remaining: About a minute - About a minute remaining */
+"TIME_REMAINING_MINUTE" = "Time Remaining: About a minute";
+
+/* Time Remaining: About 30 seconds - About 30 seconds remaining */
+"TIME_REMAINING_30_SECONDS" = "Time Remaining: About 30 seconds";
+
+/* Time Remaining: About 10 seconds - About 10 seconds remaining */
+"TIME_REMAINING_10_SECONDS" = "Time Remaining: About 10 seconds";
+
+/* Time Remaining: About 5 seconds - About 5 seconds remaining */
+"TIME_REMAINING_5_SECONDS" = "Time Remaining: About 5 seconds";
+
+/* Error - Running sips on %@ failed. */
+"RUNNING_SIPS_FAILED" = "Running SIPS on %@ failed.";
+
+/* Error - Running sips on %@ failed. */
+"SETTING_ATTRIBUTES_FAILED" = "Error in writing general attributes to %@.";
